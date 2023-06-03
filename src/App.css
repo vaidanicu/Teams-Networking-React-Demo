@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -24,10 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +31,260 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html {
+  height: 100%;
+  font-family: cursive;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border-radius: 5px;
+  background: url("Pictures/hot-air-balloon-gc5ae3774d_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+/* header-wrapper */
+
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0px;
+  margin: 0;
+  height: 120px;
+}
+
+#header-wrapper h1 {
+  margin: 0px;
+}
+
+#header-wrapper img {
+  border-radius: 50%;
+  border: 3px solid rgb(248, 219, 219);
+  width: 90px;
+  box-shadow: 0px 0px 10px 10px gray;
+  margin: 10px;
+}
+
+#header-info {
+  flex: 1;
+  padding: 0px;
+  margin: 0;
+  font-size: small;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+#header-info a {
+  color: rgba(255, 255, 255, 0.611);
+}
+
+/* Time and Data */
+
+#TimeAndDate {
+  margin: 20px;
+  font-size: larger;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.612);
+}
+
+/* top-menu-bar */
+
+#top-menu-bar {
+  text-align: center;
+  margin: 0px;
+  padding: 0;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2px;
+}
+
+#top-menu-bar li {
+  text-align: center;
+  display: contents;
+  margin: 1px;
+  padding: 1px;
+  width: 240px;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  transition: 0.5s;
+  display: inline-block;
+  margin: 0;
+}
+
+#top-menu-bar a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(173, 160, 252, 0.32);
+}
+
+/* content */
+
+#content {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+#side-menu {
+  padding: 10px 2px 5px 10px;
+  flex: 1;
+}
+
+#side-menu h2 {
+  color: rgb(161, 5, 5);
+}
+
+#side-menu section {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid rgba(107, 74, 15, 0.967);
+  border-radius: 20px;
+}
+
+#side-menu h2 {
+  margin: 10px;
+  padding: 10px;
+  font-size: x-large;
+}
+
+#sectione-left-menu label {
+  padding: 10px;
+  color: rgb(250, 2, 2);
+  font-size: 20;
+}
+
+#sectione-left-menu input {
+  border-radius: 4px;
+  margin-left: 5px;
+  width: 202px;
+  height: 20px;
+}
+
+.Contact-Us {
+  text-align: right;
+}
+.Contact-Us button {
+  margin-top: 10px;
+  cursor: pointer;
+  height: 35px;
+  width: 112px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background: none;
+  color: red;
+  font-size: large;
+}
+
+.Contact-Us button:hover {
+  background-color: rgba(173, 160, 252, 0.32);
+}
+
+/* page */
+#main {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex: 4;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.page {
+  display: none;
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+#home {
+  font-style: italic;
+  padding: 5px;
+  margin: 10px;
+}
+
+#home p {
+  margin: 5px;
+  color: rgb(174, 255, 164);
+}
+
+#skills h2 {
+  margin: 20px;
+}
+
+#skills-list {
+  margin: 10px;
+  color: rgb(174, 255, 164);
+}
+
+#skills-list span {
+  color: rgb(249, 86, 5);
+  font-weight: 200;
+}
+
+#projects {
+  margin: 20px;
+  text-decoration: none;
+}
+
+#projects a {
+  text-decoration: none;
+  color: rgb(174, 255, 164);
+}
+
+#languages {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 20px;
+}
+
+#languages table {
+  width: 50%;
+  min-width: 200px;
+  border: 3px solid;
+  width: 900px;
+  height: 300px;
+  border-collapse: collapse;
+  background-color: rgba(43, 0, 255, 0.258);
+}
+
+#languages td {
+  padding-left: 20px;
+}
+
+/* footer */
+
+.Footer {
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Footer a {
+  transition: 0.5s;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: inline-block;
+}
+.Footer a:hover {
+  background-color: rgba(173, 160, 252, 0.32);
+  display: inline-block;
+  margin: 0;
 }
