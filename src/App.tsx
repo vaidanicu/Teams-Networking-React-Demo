@@ -1,9 +1,10 @@
-import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import "./loading.css";
 import selfie from "./Pictures/2.jpg";
 import logoGitHub from "./Pictures/GitHub_logo_2013.svg.png";
 import logoLinkeding from "./Pictures/1.gif";
+import { TeamsTableComponent } from "./teams/TeamsTable";
 
 // function App_old() {
 //   return (
@@ -116,7 +117,9 @@ function ContentWrapper() {
   return (
     <section id="content">
       <SideMenu />
-      <div id="main">...TODO..</div>
+      <div id="main">
+        <TeamsTableComponent />
+      </div>
     </section>
   );
 }
